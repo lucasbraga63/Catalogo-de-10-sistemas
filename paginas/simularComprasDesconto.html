@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/simularComprasDesconto.js" defer></script>
+    <title>SImulador de compras</title>
+</head>
+
+<body>
+    <h1>Caculadora de media escolar</h1>
+    <label for="nomeProduto">Nome do produto</label><br>
+    <input type="text" id="nomeProduto"><br>
+    <label for="valorUnitario">Valor unitário</label><br>
+    <input type="number" id="valorUnitario"><br>
+    <label for="quantidadeCompra">Quantidade que vai comprar</label><br>
+    <input type="number" id="quantidadeCompra"><br>
+    <label for="desconto">Desconto</label><br>
+    <select name="desconto" id="desconto">
+        <option value="0">Sem desconto (0%)</option>
+        <option value="5">5% de desconto</option>
+        <option value="10">10% de desconto</option>
+        <option value="15">15% de desconto</option>
+        <option value="20">20% de desconto</option>
+        <option value="25">25% de desconto</option>
+        <option value="30">30% de desconto</option>
+    </select>
+
+
+    <p id="alerta"></p>
+
+    <button onclick="ExibirTudo()">Ver orçamento</button>
+    <div class="Resultado">
+     
+    </div>
+</body>
+
+</html>
